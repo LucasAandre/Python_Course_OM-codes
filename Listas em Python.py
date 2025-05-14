@@ -177,3 +177,47 @@ import random
 
 lista = [round(random.uniform(1, 10), 2) for _ in range(5)]
 print('Números decimais:', lista)
+
+# Operações matemáticas
+'''
+ADIÇÃO
+'''
+lista1 = [1, 2, 3]
+lista2 = [4, 5, 6]
+
+soma = [lista1[0] + lista2[0], lista1[1] + lista2[1], lista1[2] + lista2[2]]
+print(soma)  # [5, 7, 9]
+
+# ou
+
+lista1 = [1, 2, 3]
+lista2 = [4, 5, 6]
+
+soma = [a + b for a, b in zip(lista1, lista2)]
+print(soma)  # [5, 7, 9]
+
+# ou
+
+lista1 = [1, 2, 3]
+lista2 = [4, 5, 6]
+
+soma_total = sum(lista1) + sum(lista2)
+print(soma_total)  # 21
+
+'''
+SUBTRAÇÃO
+'''
+resultado = [a - b for a, b in zip(lista1, lista2)]
+print(resultado)  # [-3, -3, -3]
+
+'''
+MULTIPLICAÇÃO
+'''
+resultado = [a * b for a, b in zip(lista1, lista2)]
+print(resultado)  # [4, 10, 18]
+
+'''
+DIVISÃO
+'''
+resultado = [a / b for a, b in zip(lista1, lista2)]
+print(resultado)  # [0.25, 0.4, 0.5]
