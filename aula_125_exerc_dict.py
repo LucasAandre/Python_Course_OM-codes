@@ -110,16 +110,12 @@ while True:
         print('\nAgora sim!')
         break
 
-print('\n')
-
 os.system('clear')
 
 # Chamando a primeira pergunta
 print('Primeira pergunta:\n')
 print(primeira(nome))
 sleep(2)
-
-print('\n')
 
 os.system('clear')
 
@@ -128,16 +124,12 @@ print('Segunda pergunta:\n')
 print(segunda(nome))
 sleep(2)
 
-print('\n')
-
 os.system('clear')
 
 # Chamando a terceira pergunta
 print('Terceira pergunta:\n')
 print(terceira(nome))
 sleep(2)
-
-print('\n')
 
 acertos = 0
 erros = 0
