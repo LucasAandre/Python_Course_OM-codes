@@ -1,6 +1,7 @@
 # Exercício - Sistema de Perguntas e Respostas
 
 from time import sleep
+import os
 
 perguntas = [
     {
@@ -111,6 +112,8 @@ while True:
 
 print('\n')
 
+os.system('clear')
+
 # Chamando a primeira pergunta
 print('Primeira pergunta:\n')
 print(primeira(nome))
@@ -118,12 +121,16 @@ sleep(2)
 
 print('\n')
 
+os.system('clear')
+
 # Chamando a segunda pergunta
 print('Segunda pergunta:\n')
 print(segunda(nome))
 sleep(2)
 
 print('\n')
+
+os.system('clear')
 
 # Chamando a terceira pergunta
 print('Terceira pergunta:\n')
@@ -141,6 +148,8 @@ for resultado in resultados:
     
     else:
         erros += 1
+
+os.system('clear')
 
 print(f'{nome}, você teve {acertos} acerto(s) e {erros} erro(s).')
 print('\nAté a próxima!')
